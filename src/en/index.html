@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Firebase-Simple-Login</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <script src="index.js"></script>
+  <body>
+    <div class="main-div">
+    <form onsubmit="login()" id="loginForm">
+      <!--DO NOT CHANGE THE ID'S, BUT IF YOU CHANGE ALSO REMEMBER TO CHANGE THE FILE: index.js-->
+      <label class="custom-field">
+           <span class="placeholder">Email:</span>
+           <input id="email" type="text" class="input" required />
+       </label><br />
+       
+       <label class="custom-field">
+          <span class="placeholder">Password:</span>
+           <input id="password" type="password" class="input" required />
+      </label><br /><br/>
+      <button type="submit">Login</button>
+       <button onclick="signUp()" >Sign Up</button>
+       <a href="#" id="forgotpass" onclick="forgotPass()">Forgot password?</a>
+       
+      
+      </div>
+   </form>
+  
+  <div>
+      <h2></h2>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+  <script src="firebase.js"></script>
+  <script src="index.js"></script>
+  </body>
+</html>
